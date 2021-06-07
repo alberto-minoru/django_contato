@@ -15,6 +15,10 @@
     <form method="post">
         {% csrf_token %}
         {{ form.as_p }}
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <div class="g-recaptcha" data-sitekey="6LdsZBgbAAAAAIp_SmP_pQP0U-9NVREqGMCcYh1l"></div>
+
         <input type="submit" value="Enviar">
     </form>
 {% endblock content %}
